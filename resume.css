@@ -1,0 +1,197 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Resume Container */
+.resume-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 15px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+header img:hover {
+    transform: scale(1.6);
+}
+
+.contact-info h1 {
+    font-size: 2.5em;
+    color: #2980b9;
+}
+
+.contact-info p {
+    font-size: 1em;
+    color: #7f8c8d;
+}
+
+/* Objective Section */
+.objective {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.objective h2 {
+    font-size: 1.5em;
+    color: #2980b9;
+}
+
+/* Education Section */
+.education {
+    margin-bottom: 20px;
+}
+
+.education h2 {
+    font-size: 1.5em;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.education table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.education th, .education td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.education th {
+    background-color: #2980b9;
+    color: white;
+}
+
+.education tr:hover {
+    background-color: #dfe6e9;
+}
+
+/* Skills and Interests Section */
+.skills-interests {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills, .interests {
+    width: 48%;
+}
+
+.skills h2, .interests h2 {
+    font-size: 1.5em;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.skills ul, .interests ul {
+    list-style-type: none;
+}
+
+.skills li, .interests li {
+    background: #ecf0f1;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.skills li:hover, .interests li:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Details Section */
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-details h2 {
+    font-size: 1.5em;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex ;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
